@@ -1,0 +1,14 @@
+# Ignore everything by default
+*
+
+# But track these essential files/folders
+!.gitignore
+!agents/
+!agents/**
+!commands/
+!commands/**
+!plugins/
+!plugins/**
+!CLAUDE.md
+!settings.json
+!ast-grep-guide.md
