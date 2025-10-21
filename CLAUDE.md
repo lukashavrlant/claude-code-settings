@@ -32,7 +32,7 @@ Use uncle-bob agent after writing/modifying code to ensure simplicity and avoid 
 
 ## AST-Grep Tool Usage
 
-**ALWAYS prefer ast-grep (`sg`) over grep for code structure searches** - use it for syntax-aware pattern matching (function calls, class definitions, imports) and refactoring where regex can't handle code semantics; only use Grep for simple text content matching. Common patterns: `sg --pattern 'console.$METHOD($$$)' --lang typescript` for console calls, `sg --pattern 'myFunction($$$)'` for function calls, `sg --pattern 'import { $$$ } from "$MODULE"'` for imports. See `~/.claude/ast-grep-guide.md` for details if necessary.
+**ALWAYS prefer ast-grep (`sg`) over grep for code structure searches** - use it for syntax-aware pattern matching (function calls, class definitions, imports) and refactoring where regex can't handle code semantics; only use Grep for simple text content matching. Common patterns: `sg --pattern 'console.$METHOD($$$)' --lang typescript` for console calls, `sg --pattern 'myFunction($$$)'` for function calls, `sg --pattern 'import { $$$ } from "$MODULE"'` for imports. For simpler refactoring tasks, consider `comby` with easier syntax like `comby 'console.log(:[msg])' 'logger.info(:[msg])' .ts`. See `~/.claude/ast-grep-guide.md` for details if necessary.
 
 ## Context7 MCP Tools
 
