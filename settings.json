@@ -44,10 +44,6 @@
     "deny": [],
     "additionalDirectories": []
   },
-  "sandbox": {
-    "enabled": true,
-    "autoAllowBashIfSandboxed": true,
-  },
   "allowedTools": [
     "Task",
     "Glob",
@@ -57,5 +53,6 @@
     "Edit",
     "MultiEdit",
     "Write"
-  ]
+  ],
+  "enableAllProjectMcpServers": true
 }
